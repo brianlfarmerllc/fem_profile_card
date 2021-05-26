@@ -1,0 +1,105 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #2d3248;
+}
+
+h3 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #6a6f81;
+}
+
+span {
+  color: #6a6f81;
+}
+
+h4 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #6a6f81;
+}
+
+hr {
+  background-color: #dedede;
+  height: 1px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  min-height: 100vh;
+  background: url("../assets/images/bg-pattern-top.svg"), url("../assets/images/bg-pattern-bottom.svg"), #19a2ae;
+  background-repeat: no-repeat;
+  background-position: left -300px top -500px, right -300px bottom -500px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.card {
+  min-height: 425px;
+  min-width: 375px;
+  background: white;
+  border-radius: 12px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 2fr 2fr 1.1fr;
+      grid-template-rows: 2fr 2fr 1.1fr;
+  overflow: hidden;
+}
+
+.card .top {
+  background: url("../assets/images/bg-pattern-card.svg");
+}
+
+.card .bottom {
+  border-top: solid #dedede;
+  border-width: 1px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr (2fr)[3] 1fr;
+      grid-template-columns: 1fr repeat(3, 2fr) 1fr;
+  place-items: center;
+  text-align: center;
+}
+
+.card .bottom .followers {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+}
+
+.card .bottom h2 {
+  padding-bottom: 0.5rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=styles.css.map */
