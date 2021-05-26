@@ -37,6 +37,7 @@ h3 {
 }
 span {
   color: $lightText;
+  font-weight: 400;
 }
 
 h4 {
@@ -59,8 +60,8 @@ main {
   min-height: 100vh;
   background: url("../assets/images/bg-pattern-top.svg"),
     url("../assets/images/bg-pattern-bottom.svg"), $background;
-  // background-size: 70%;
   background-repeat: no-repeat;
+  background-size: 70%;
   background-position: left -300px top -500px, right -300px bottom -500px;
   display: grid;
   place-items: center;
@@ -75,6 +76,27 @@ main {
   overflow: hidden;
   .top {
     background: url("../assets/images/bg-pattern-card.svg");
+  }
+  .middle {
+    text-align: center;
+    position: relative;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    img {
+      position: absolute;
+      top: -40%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 35%;
+      border-radius: 100%;
+      border: solid white 5px;
+    }
+    .middleText {
+      grid-row-start: 2;
+      h2 {
+        padding-bottom: 1rem;
+      }
+    }
   }
   .bottom {
     border-top: solid $line;
@@ -98,4 +120,43 @@ main {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+@media screen and (max-width: 1280px) {
+  main {
+    background-size: 80%;
+  }
+}
+@media screen and (max-width: 1100px) {
+  main {
+    background-size: 85%;
+  }
+}
+@media screen and (max-width: 950px) {
+  main {
+    background-size: 90%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  main {
+    background-size: 100%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  main {
+    background-size: 125%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  main {
+    background-size: 200%;
+    background-position: left -500px top -450px, right -500px bottom -450px;
+  }
+
+  .card {
+    min-height: 375px;
+    min-width: 325px;
+  }
 }

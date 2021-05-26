@@ -27,6 +27,7 @@ h3 {
 
 span {
   color: #6a6f81;
+  font-weight: 400;
 }
 
 h4 {
@@ -52,6 +53,7 @@ main {
   min-height: 100vh;
   background: url("../assets/images/bg-pattern-top.svg"), url("../assets/images/bg-pattern-bottom.svg"), #19a2ae;
   background-repeat: no-repeat;
+  background-size: 70%;
   background-position: left -300px top -500px, right -300px bottom -500px;
   display: -ms-grid;
   display: grid;
@@ -72,6 +74,35 @@ main {
 
 .card .top {
   background: url("../assets/images/bg-pattern-card.svg");
+}
+
+.card .middle {
+  text-align: center;
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+}
+
+.card .middle img {
+  position: absolute;
+  top: -40%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 35%;
+  border-radius: 100%;
+  border: solid white 5px;
+}
+
+.card .middle .middleText {
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+}
+
+.card .middle .middleText h2 {
+  padding-bottom: 1rem;
 }
 
 .card .bottom {
@@ -101,5 +132,46 @@ main {
 
 .attribution a {
   color: #3e52a3;
+}
+
+@media screen and (max-width: 1280px) {
+  main {
+    background-size: 80%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  main {
+    background-size: 85%;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  main {
+    background-size: 90%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  main {
+    background-size: 100%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  main {
+    background-size: 125%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  main {
+    background-size: 200%;
+    background-position: left -500px top -450px, right -500px bottom -450px;
+  }
+  .card {
+    min-height: 375px;
+    min-width: 325px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
