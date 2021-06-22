@@ -72,6 +72,6 @@ Flexbox is powerful but so is grid and I need to focus on learning when to use w
 
 ## Author
 
-- Website - [Brian Farmer](https://brianlfarmerllc-biosite.netlify.app/)
+- Website - [Brian Farmer]https://brianfarmerwebdev.netlify.app)
 - GitHub URL: - [GitHub URL](https://github.com/brianlfarmerllc/fem_profile_card)
 - Frontend Mentor - [@brianlfarmerllc](https://www.frontendmentor.io/profile/brianlfarmerllc)
